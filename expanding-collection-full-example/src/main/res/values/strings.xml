@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WiFi翻译机</string>
+    <string name="home">首页</string>
+    <string name="speechTranslate">翻一翻</string>
+    <string name="photoTranslate">拍一拍</string>
+    <string name="ask">问一问</string>
+    <string name="simultaneous">同声传译</string>
+    <string name="GroupTranslate">组群翻译</string>
+    <string name="Setting">系统设置</string>
+
+</resources>

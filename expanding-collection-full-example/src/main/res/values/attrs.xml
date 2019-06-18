@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="WaveLineView">
+        <attr name="wlvBackgroundColor" format="color"/>
+        <attr name="wlvLineColor" format="color"/>
+        <attr name="wlvThickLineWidth" format="dimension"/>
+        <attr name="wlvFineLineWidth" format="dimension"/>
+        <attr name="wlvMoveSpeed" format="float"/>
+        <attr name="wlvSamplingSize" format="integer"/>
+        <attr name="wlvSensibility" format="integer"/>
+    </declare-styleable>
+</resources>
