@@ -1,0 +1,102 @@
+package com.a51tgt.fyj.net;
+
+import android.annotation.TargetApi;
+import android.os.Build;
+import android.os.Handler;
+import android.os.Message;
+import android.text.TextUtils;
+import android.util.Log;
+
+
+import com.a51tgt.fyj.comm.TcpConfig;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.net.InetSocketAddress;
+import java.net.Socket;
+
+@TargetApi(Build.VERSION_CODES.GINGERBREAD)
+public class TcpUtil {
+
+	private static TcpUtil instance = null;
+
+	public static TcpUtil getInstance() {
+		if (instance == null) {
+			instance = new TcpUtil();
+		}
+		return instance;
+	}
+
+	/**
+	 * @param msg
+	 * @param handler
+	 * @返回值 void
+	 * @所属类 TcpUtil.java
+	 * @创建者 Aries_Hoo
+	 * @作用
+	 * @创建时间 2015年11月5日下午3:53:37
+	 */
+	public void sendMessage(final String msg, final Handler handler, final int what) {
+		if(handler == null) return;
+		
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				BufferedReader in = null;
+				PrintWriter out = null;
+				Socket socket = new Socket();
+				JSONObject object = new JSONObject();
+				Message message = new Message();
+				try {
+					socket.connect(new InetSocketAddress(TcpConfig.hostIP, TcpConfig.port), 10 * 1000);
+					if (!msg.isEmpty()) {
+						Log.i("mmmmm", msg);
+						if (socket.isConnected() && !socket.isClosed()) {
+							out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())), true);
+							out.println(msg);
+							in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+							String line = null;
+							String data = "";
+							while ((line = in.readLine()) != null) {
+								data += line;
+							}
+							if(!TextUtils.isEmpty(data)){
+								message.what = what;
+								message.obj = data;
+							}
+							else {
+								message.what = -10;
+								message.obj = "";
+							}
+						}
+					}
+				} catch (IOException e) {
+					message.what = -10;
+					message.obj = e.getMessage();
+				} catch (Exception e){
+					message.what = -10;
+					message.obj = e.getMessage();
+				}finally {
+					try {
+						if (in != null)
+							in.close();
+						if (socket != null)
+							socket.close();
+						if (out != null)
+							out.close();
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+				}
+				handler.sendMessage(message);
+			}
+		}).start();
+	}
+}

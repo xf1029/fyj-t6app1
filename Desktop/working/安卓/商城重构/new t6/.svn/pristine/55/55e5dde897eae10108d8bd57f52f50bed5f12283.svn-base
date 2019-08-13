@@ -1,0 +1,55 @@
+package com.a51tgt.fyj.ui;
+
+import android.annotation.SuppressLint;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+import com.a51tgt.fyj.R;
+
+
+public class AboutUsActivity extends BaseActivity{
+
+	TextView tv_version;
+	@SuppressLint("InflateParams") @Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_about_us);
+
+//		CommUtil.setStatusBarBackgroundColor(AboutUsActivity.this);
+		AboutUsActivity context = AboutUsActivity.this;
+		tv_version = (TextView)findViewById(R.id.tv_version);
+		PackageManager packageManager = getPackageManager();
+		PackageInfo packInfo = null;
+		try {
+			packInfo = packageManager.getPackageInfo(context.getPackageName(),0);
+			String version = packInfo.versionName;
+			tv_version.setText(version);
+		} catch (PackageManager.NameNotFoundException e) {
+			e.printStackTrace();
+		}
+
+		findViewById(R.id.iv_back).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				finish();
+			}
+		});
+
+	}
+	
+	@Override
+	protected void onSaveInstanceState(Bundle outState)
+    { 
+        super.onSaveInstanceState(outState); 
+    } 
+
+	@Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState)
+    { 
+        super.onRestoreInstanceState(savedInstanceState); 
+    }
+}
+

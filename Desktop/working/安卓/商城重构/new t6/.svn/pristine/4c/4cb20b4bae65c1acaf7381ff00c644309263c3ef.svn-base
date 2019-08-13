@@ -1,0 +1,220 @@
+<resources>
+    <string name="app_name">WifiTranslator</string>
+    <string name="title_activity_home">@string/app_name</string>
+    <string name="cannot_find_device">Can not find device, please connect the network of the device.(if can not find, please open the wifi)</string>
+    <string name="select_wifi">select wifi</string>
+    <string name="about">TGT Limiited.\nCopyright ©2014-2017</string>
+
+    <string name="tip_welcome">Welcom to Use Wifi Transaltor</string>
+    <string name="tip_title">Warning</string>
+    <string name="tip_input_password">input password</string>
+    <string name="tip_purchase_flow_package">purchase flow package</string>
+    <string name="tip_input_old_password">old password：</string>
+    <string name="tip_input_new_password">new password：</string>
+    <string name="tip_input_old_password_hint">input old password</string>
+    <string name="tip_input_new_password_hint">input new password</string>
+    <string name="tip_close_device_hotspot">Do you want to close device hotspot?</string>
+    <string name="tip_set_blacklist">domain or ip address, split wiht \",\". for example(www.xxx.com,111.111.1.11)</string>
+    <string name="tip_apn">Apn</string>
+    <string name="tip_apn_name">Apn Name</string>
+    <string name="tip_apn_mcc">MCC</string>
+    <string name="tip_apn_mnc">MNC</string>
+    <string name="tip_apn_numermic">NUMERMIC</string>
+    <string name="tip_apn_plmn">PLMN</string>
+    <string name="tip_apn_type">Type</string>
+    <string name="tip_apn_user">UserName</string>
+    <string name="tip_apn_password">Password</string>
+    <string name="tip_apn_port">Port</string>
+    <string name="tip_apn_proxy">Proxy</string>
+    <string name="tip_apn_mmsc">MMSC</string>
+    <string name="tip_not_connected">Can not connected to the device</string>
+    <string name="tip_not_connecting">not connected</string>
+    <string name="tip_for_open_scan_connected">Can not connected to the device, please scan the QR-Code.</string>
+    <string name="tip_for_new_scan_connected">Please scan the QR-Code to connect device.</string>
+    <string name="tip_for_new_scan_connected2">Please scan the QR-Code of the device.</string>
+    <string name="tip_scan"></string>
+    <string name="tip_password_empty">Password cannot be empty</string>
+    <string name="tip_password_at_least_8">Password at least 8 characters</string>
+    <string name="tip_input">Input</string>
+    <string name="tip_password">password</string>
+    <string name="tip_operation_success">Operation Success</string>
+    <string name="tip_operation_failed">Operation Failed</string>
+    <string name="tip_match_bluetooth">Waiting for pairing the device, then connect the device again</string>
+    <string name="tip_can_not_internet">The internet connection failed</string>
+    <string name="tip_bluetooth_open">Bluetooth is opened</string>
+    <string name="tip_enter">Enter</string>
+
+    <string name="tip_scaning">scaning...</string>
+    <string name="tip_disconnected">disconnected</string>
+    <string name="tip_get_ip_address">getting ip address...</string>
+    <string name="tip_connecting">connecting...</string>
+    <string name="tip_connect">connecting</string>
+    <string name="tip_connect2">connect</string>
+    <string name="tip_authenticating">authenticating...</string>
+    <string name="tip_get_flow_package">Go to flow mall</string>
+    <string name="tip_connected_to">connected</string>
+    <string name="tip_in_use">In Use</string>
+    <string name="tip_payment">Payment</string>
+    <string name="tip_device_ssid">Device:</string>
+    //未安装微信
+    <string name="tip_unistall_wetchat">WeChat not installed</string>
+    <string name="tip_can_not_find_device_mac_address">Can not find mac address</string>
+    <string name="tip_current_version_info">Current Version:</string>
+    <string name="tip_newest_version_check">Check the new version...</string>
+    <string name="tip_no_new_version">This is the newest Version</string>
+    <string name="tip_download_error">Download Error!</string>
+    <string name="tip_download_apk">downloading...</string>
+    <string name="tip_select_file">Select files</string>
+    <string name="tip_can_not_find_file">Can not find the update file</string>
+    <string name="tip_can_not_get_device_info">Can not get device info</string>
+    <string name="tip_current_device_info">Can not get device info</string>
+    <string name="tip_pay_success">Pay Success</string>
+    <string name="tip_pay_failed">Pay failed</string>
+
+    <string name="tip_for_active_device">The Device is not actived, will you like to activate the device</string>
+    <string name="tip_for_active_device_error">Can not activate the device</string>
+    <string name="tip_can_not_find_the_device">Can not detect the device infomation</string>
+
+    <string name="tip_translator_package_introduce">翻译流量是指仅供本设备在有效国家范围内支持本设备翻译的流量。</string>
+
+    <string name="tip_wxpay_success">success</string>
+    <string name="tip_wxpay_cancel">cancel</string>
+    <string name="tip_wxpay_denied">denied</string>
+    <string name="tip_wxpay_failed">failed</string>
+    <string name="tip_wxpay_unsupport">unsupport</string>
+
+    <string name="tip_start_date">Start Date:</string>
+    <string name="tip_select_start_date">Select Start Date</string>
+
+    <string name="tip_device_info_menu">unbind</string>
+    <string name="tip_device_list_menu">edit</string>
+    <string name="tip_device_list_menu2">back</string>
+    <string name="tip_unbind_the_device">Would you like to unbind the device?</string>
+
+    <string name="commit_button">Commit</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="default_button">Recover</string>
+    <string name="connect_wifi_button">go to connect device wifi</string>
+    <string name="toast_back_exit">press again to exit</string>
+
+    <string name="button_purchase">Buy Now</string>
+    <string name="button_connect">Connect</string>
+    <string name="button_commit">Ok</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_forget">Forget</string>
+    <string name="button_update">Update</string>
+    <string name="button_disconnect">Disconnect</string>
+    <string name="button_close">Close</string>
+
+    <string name="device_ssid">Device SSID：</string>
+    <string name="device_wifi_password">Wifi Password:</string>
+    <string name="device_translate_language">Translate Language：</string>
+    <string name="device_state_of_charge">State Of Charge：</string>
+    <string name="device_connect_count">Connect Devices：</string>
+    <string name="device_signal_strength">Signal Strength：</string>
+    <string name="device_app_version">Device Version：</string>
+    <string name="device_flow_package">Flow Package</string>
+    <string name="device_flow_package_name">Flow Package Name</string>
+    <string name="device_daily_flow">Daily flow</string>
+    <string name="device_today_used_flow">Today Used flow</string>
+    <string name="device_3_hours_used_flow">3 Hours Used flow</string>
+    <string name="device_flow_package_starttime">Start Time</string>
+    <string name="device_flow_package_endtime">End Time</string>
+    <string name="device_flow_left">Flow Left</string>
+    <string name="device_flow_total_count">Flow Count</string>
+    <string name="device_flow_countries">Countries</string>
+
+    <string name="title_flow_mall">Flow Mall</string>
+    <string name="title_device_setting">Setting</string>
+    <string name="title_modify_hotspot_password">Modify Device Hotspot password</string>
+    <string name="title_close_device_hotspot">Close Device Hotspot</string>
+    <string name="title_set_apn">Set Apn</string>
+    <string name="title_set_blacklist">Set Blacklist</string>
+    // 省流量模式
+    <string name="title_save_flow">Flow rate saving scheme</string>
+    //还原
+    <string name="title_set_production">Reduction</string>
+    //恢复设备默认热点密码
+    <string name="title_set_defaultPassWord">Restore default hotspot password</string>
+    //还原出厂设置
+    <string name="title_restore_setting">Restore factory settings</string>
+    <string name="title_open_tip">The provincial traffic model can save traffic when using device hotspots and prevent some applications from stealing traffic in the background. If it needs to be shut down, restart the device after the operation.</string>
+    <string name="title_connect_wifi">Connect Wifi</string>
+    <string name="title_other_wifi">Other WiFi</string>
+    <string name="title_set_translate_langugage">Set translate language</string>
+    <string name="title_set_tip_langugage">Set tip language</string>
+    <string name="title_flow_orders">Flow orders</string>
+    <string name="title_detection_device">Detection device</string>
+    <string name="title_basic_setting">Basic setting</string>
+    <string name="title_advanced_setting">Advanced setting</string>
+    <string name="title_device_self_detection">Device self detection</string>
+    <string name="title_software_version">Software version detection</string>
+    <string name="title_device_connect_wifi">Connect Wifi</string>
+    <string name="title_select_wifi">Select Wifi</string>
+    //开 关
+    <string name="title_saveflow_open">open</string>
+    <string name="title_saveflow_close">close</string>
+
+    <string name="title_tip_nameempty">hotspot name can not be empty</string>
+    <string name="title_tip_passwordempty">password can not be empty</string>
+    <string name="title_manual_wifiname">Enter the hotspot name</string>
+    <string name="title_manual_wifipassword">Enter the hot password</string>
+   <string name="title_manual_join">Join</string>
+    <string name="title_otherwifi">Other WiFi</string>
+
+
+    <string name="title_manual_wifi">Manual importation ssid connection</string>
+
+    <string name="title_saved_wifi">Saved Wifi</string>
+    <string name="title_current_connected_wifi">Connectd Wifi</string>
+    <string name="title_set_translate_language">Set Translate Language</string>
+    <string name="title_about">About Us</string>
+    <string name="title_device_orders">Device flow orders</string>
+    <string name="title_scan">scan</string>
+
+    <string name="system_webview_error">load info error...</string>
+
+    <string name="error_set_device">set device error</string>
+    <string name="error_check_old_password">check old password error</string>
+    <string name="error_set_new_password">password is at least 8 characters and is numeric and alphabetic</string>
+    <string name="error_set_new_password2">password is at least 8 characters</string>
+    <string name="error_close_device_hotspot">close device hotspot error</string>
+    <string name="error_set_blacklist">blacklist is empty</string>
+    <string name="error_apn_name">apn name is needed</string>
+    <string name="error_apn">apn is needed</string>
+    <string name="error_apn_mcc">mcc is needed</string>
+    <string name="error_apn_mnc">mnc is needed</string>
+    <string name="error_apn_numermic">numermic is needed</string>
+    <string name="error_open_bluetooth">open bluetooth error</string>
+    <string name="error_cannot_connect_device_from_bluetooth">Can not connect device from bluetooth.\nYou can scan the barcode or restart device.</string>
+    <string name="error_cannot_connect_device_from_bluetooth2">Can not connect device.</string>
+    <string name="error_mobile_phone_not_support_bluetooth">Your mobile phone can not support bluetooth</string>
+    <string name="error_no_device_connect">No device to be connected, please connect the device</string>
+    <string name="error_scan_device_error">Scan the device error</string>
+    <string name="error_network_is_not_available">Network is not available</string>
+
+    <string name="warning_close_device_hotspot">Do you want to close Hotspot</string>
+    <string name="warning_input_start_date">Please select start date</string>
+
+    <string name="status_wifi_connected">connected</string>
+    <string name="status_wifi_saved">saved</string>
+    <string name="status_wifi_searched">searched</string>
+
+    <string name="device_introduce">&#160;&#160;&#160;&#160;百度共享WiFi翻译机由百度与途鸽联合出品，是一款革新性的智能便携硬件产品。\n它基于百度语音识别合成及神经网络翻译等人工智能技术，可以在中英、中日等互译模式中自动识别语种，实现“傻瓜式”一键翻译；与此同时，它融合途鸽全球云通信  Cloud SIM自主专利技术，自带80+国家移动数据流量，无需SIM卡，开机即可自动联网，让您轻松和世界沟通 。\n &#160;&#160;&#160;&#160;这款高科技智能翻译机，能满足您对跨境旅游 、商务沟通、外语学习、过节送礼的多重需求，让您畅享让你的跨境旅行更精彩，全球沟通更自在。</string>
+    <array name="translate_language">
+        <item>Chinese-->English</item>
+        <item>English-->Chinese</item>
+        <item>Chinese-->Japanese</item>
+        <item>Japanese-->Chinese</item>
+    </array>
+
+    <array name="tip_language">
+        <item>中文(简体)</item>
+        <item>English</item>
+        <item>Japanese</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
